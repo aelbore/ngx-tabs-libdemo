@@ -3,7 +3,7 @@
   "version": "0.0.0-development",
   "description": "Demo library to showcase Angular packaging format",
   "scripts": {
-    "bundle": "node_modules/.bin/gulp bundle"
+    "build": "node_modules/.bin/gulp bundle"
   },
   "author": "Juri Strumpflohner",
   "license": "MIT",
