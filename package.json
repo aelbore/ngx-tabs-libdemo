@@ -1,42 +1,32 @@
 {
-  "$schema": "./node_modules/ng-packagr/package.schema.json",
   "name": "ngx-tabs-libdemo",
   "version": "0.0.0-development",
   "description": "Demo library to showcase Angular packaging format",
   "scripts": {
-    "build": "ng-packagr -p package.json",
-    "copyPackageJson": "copyfiles package.json dist",
-    "semantic-release":
-      "semantic-release pre && npm run copyPackageJson && npm publish dist && semantic-release post"
+    "bundle": "node_modules/.bin/gulp bundle"
   },
   "author": "Juri Strumpflohner",
   "license": "MIT",
-  "ngPackage": {
-    "lib": {
-      "entryFile": "public_api.ts"
-    }
-  },
-  "peerDependencies": {
-    "@angular/core": "^5.0.0",
-    "@angular/common": "^5.0.0",
-    "rxjs": "^5.5.2"
-  },
-  "devDependencies": {
-    "@angular/common": "^5.0.2",
-    "@angular/compiler": "^5.0.2",
-    "@angular/compiler-cli": "^5.0.2",
-    "@angular/core": "^5.0.2",
-    "copyfiles": "^1.2.0",
-    "ng-packagr": "^2.0.0",
-    "rollup": "^0.51.8",
-    "rxjs": "^5.5.2",
-    "semantic-release": "^8.2.0",
-    "tsickle": "^0.26.0",
-    "typescript": "2.4.2",
-    "zone.js": "^0.8.14"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/juristr/ngx-tabs-libdemo.git"
+  },
+  "devDependencies": {
+    "@ngx-devtools/bundle": "0.7.2",
+    "@ngx-devtools/common": "0.7.2",
+    "gulp": "3.9.1"
+  },
+  "dependencies": {
+    "@angular/animations": "5.2.5",
+    "@angular/common": "5.2.5",
+    "@angular/compiler": "5.2.5",
+    "@angular/core": "5.2.5",
+    "@angular/forms": "5.2.5",
+    "@angular/http": "5.2.5",
+    "@angular/platform-browser": "5.2.5",
+    "@angular/platform-browser-dynamic": "5.2.5",
+    "@angular/router": "5.2.5",
+    "rxjs": "5.5.6",
+    "zone.js": "0.8.20"
   }
 }
